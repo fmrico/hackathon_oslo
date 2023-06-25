@@ -1,0 +1,5 @@
+repositories:
+  ThirdParty/Groot:
+    type: git
+    url: https://github.com/BehaviorTree/Groot.git
+    version: master

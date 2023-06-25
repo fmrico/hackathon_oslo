@@ -1,0 +1,24 @@
+<root>
+    <TreeNodesModel>
+        <Action ID="ApproachBomb">
+            <input_port name="bomb_id"/>
+        </Action>
+        <Action ID="DeactivateBomb">
+            <input_port name="bomb_id"/>
+            <input_port name="code"/>
+        </Action>
+        <Condition ID="IsBombDetected">
+            <output_port name="bomb_id"/>
+            <output_port name="bomb_pose"/>
+            <output_port name="code"/>
+        </Condition>
+        <Condition ID="IsBombNear">
+            <input_port name="bomb_id"/>
+        </Condition>
+        <Action ID="LookForBomb"/>
+        <Action ID="Move">
+            <input_port name="goal"/>
+        </Action>
+    </TreeNodesModel>
+</root>
+
