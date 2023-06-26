@@ -17,6 +17,73 @@ The Tiago robot has a bomb detector that indicates the distance to the bomb and 
 
 **Only you, your robot, and your knowledge of ROS 2 can save the City. Good Luck!!!.**
 
+## Installation and Environment Setup
+
+### Install prerequisites to run with docker
+
+- Install docker on your machine. You can find instructions [here](https://docs.docker.com/engine/install/ubuntu/)
+- Allow non-root users to manage docker. Instructions [here](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user)
+- Install VSCode. Instructions [here](https://code.visualstudio.com/download)
+- Install [nvidia-docker](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker)(only needed if you have a nvidia GPU)
+
+
+### Download and run the image with ROS 2, VSCode, and Simulation
+
+1. The first time, download and run the image by typing:
+
+`docker run -p 6080:80 --privileged --name hackathon -d jmguerreroh/irlab_ros2:humble`
+
+2. Check the status, when it appears as healthy, it means that the docker is running successfully
+
+![Captura desde 2023-06-26 09-32-51](https://github.com/fmrico/hackathon_oslo/assets/3810011/0452aa6b-e0f1-4f56-b08c-6c26e979f849)
+
+3. Now open your browser and connect to: `localhost:6080`
+    * Inside the docker, we can find a workspace: `ros2_ws`
+    * It contains all packages necessary to launch the simulation of the Tiago robot and its navigation
+    *  Inside this package, we can find a config file: `config/params.yaml` to change the scenario, robot position, and arm
+
+![Captura desde 2023-06-26 09-34-04](https://github.com/fmrico/hackathon_oslo/assets/3810011/135bef95-c2d7-4a6c-83cf-8aa5bc381d05)
+
+4. To start the robot simulation:
+
+```
+ros2 launch tiago_simulator simulation.launch.py
+```
+
+Check that outside from docker, in your host, you can see the topics:
+
+```
+ros2 topic list
+``` 
+
+5. If you want to stop the docker, type this outside from docker:
+```
+docker stop hackathon
+```
+6. If you want to start the docker:
+```
+docker start hackathon
+```
+
+![Captura desde 2023-06-26 09-36-17](https://github.com/fmrico/hackathon_oslo/assets/3810011/e6621a8d-7d72-401c-8708-524282d5e0f4)
+
+### Clone and build this repo
+
+It is recommended (but not mandatory) that you develop your robot's code outside of the docker. Assuming that you have a workspace in `~/hackathon_ws`, type:
+
+```
+cd ~/hackathon_ws/src
+git clone https://github.com/fmrico/hackathon_oslo.git
+vcs import . < hackathon_oslo/thirdparty.repos
+rosdep install --from-paths src --ignore-src -y
+```
+
+and then build:
+
+```
+colcon build --symlink-install
+```
+
 ## The bombs
 
 The bombs are of the latest generation (they use ROS 2), and can be shown in RViz2 when they are activated, exploded, and deactivated.
@@ -54,5 +121,6 @@ artificier:
     codes: ['1234', '1111', '2143', '3214', '5656', '7532', '1926', '1145']
 ```
 
+The deactivation code to be sent to the bomb is ${BOMB_ID}_${BOMB_CODE}. For example, for bomb_1, the deactivation code is `
 
 
