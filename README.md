@@ -121,6 +121,11 @@ artificier:
     codes: ['1234', '1111', '2143', '3214', '5656', '7532', '1926', '1145']
 ```
 
-The deactivation code to be sent to the bomb is ${BOMB_ID}_${BOMB_CODE}. For example, for bomb_1, the deactivation code is `
+The deactivation code to be sent to the bomb is ${BOMB_ID}_${BOMB_CODE}. For example, for bomb_1, the deactivation code is `bomb_1_1111`.
 
+# Scenarios
 
+Before going to the streets of Oslo to look for the bombs in real scenarios, we will do a training phase.
+
+* [Training Phase](https://github.com/fmrico/hackathon_oslo/blob/main/scenario_train/Readme.md)
+* [Real Scenarios Phase](https://github.com/fmrico/hackathon_maps/blob/main/scenario_train/Readme.md)
