@@ -4,7 +4,7 @@ This repository contains the material for the Hackathon of the REMARO summer sch
 
 ## The history
 
-Oslo is under siege!!! Bombs attacks are taking place in three different city locations: a factory, a bookstore, and the Prime Minister's house.
+Oslo is under siege!!! Bombs attacks are taking place in three different city locations: a factory, a bookstore, a hospital, and the Prime Minister's house.
 
 ![oslo_1](https://github.com/fmrico/hackathon_oslo/assets/3810011/c1249084-5200-4e19-ab88-02b133ef4936)
 
@@ -31,7 +31,7 @@ The Tiago robot has a bomb detector that indicates the distance to the bomb and 
 
 1. The first time, download and run the image by typing:
 
-`docker run -p 6080:80 --privileged --name hackathon -d jmguerreroh/irlab_ros2:humble`
+`docker run -p 6080:80 --privileged --name hackathon -d jmguerreroh/hackathon:humble`
 
 2. Check the status, when it appears as healthy, it means that the docker is running successfully
 
