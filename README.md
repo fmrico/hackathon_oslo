@@ -6,7 +6,7 @@ This repository contains the material for the Hackathon of the REMARO summer sch
 
 Oslo is under siege!!! Bombs attacks are taking place in three different city locations: a factory, a bookstore, a hospital, and the Prime Minister's house.
 
-![oslo_1](https://github.com/fmrico/hackathon_oslo/assets/3810011/c1249084-5200-4e19-ab88-02b133ef4936)
+![oslo_1 drawio](https://github.com/fmrico/hackathon_oslo/assets/3810011/b20cc184-fa3d-45ec-8bbf-7d0b0f6301a7)
 
 
 The attendees of this Hackathon must develop the behavior of the Tiago robot to deactivate the bombs in these scenarios. Fortunately, we have the deactivation codes. If Tiago gets the code wrong or his countdown reaches 0, the bomb will explode.
