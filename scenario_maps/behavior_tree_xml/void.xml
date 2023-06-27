@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <root main_tree_to_execute="BehaviorTree">
-    <!-- FIX47 do the Behavior Tree with Groot for disabling bombs with maps -->
+    <!-- ////////// -->
     <BehaviorTree ID="BehaviorTree">
         <KeepRunningUntilFailure>
             <AlwaysSuccess/>

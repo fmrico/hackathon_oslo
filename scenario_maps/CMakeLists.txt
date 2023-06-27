@@ -52,6 +52,9 @@ ament_target_dependencies(bombs_spawn_bookstore ${dependencies})
 add_executable(bombs_spawn_warehouse src/bombs_spawn_warehouse.cpp)
 ament_target_dependencies(bombs_spawn_warehouse ${dependencies})
 
+add_executable(bombs_spawn_hospital src/bombs_spawn_hospital.cpp)
+ament_target_dependencies(bombs_spawn_hospital ${dependencies})
+
 
 add_library(approach_bomb_bt_node SHARED src/scenario_maps/ApproachBomb.cpp)
 add_library(deactivate_bomb_bt_node SHARED src/scenario_maps/DeactivateBomb.cpp)
@@ -84,6 +87,7 @@ install(TARGETS
   bombs_spawn_house
   bombs_spawn_bookstore
   bombs_spawn_warehouse
+  bombs_spawn_hospital
   ARCHIVE DESTINATION lib
   LIBRARY DESTINATION lib
   RUNTIME DESTINATION lib/${PROJECT_NAME}

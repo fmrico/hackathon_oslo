@@ -1,1 +1,12 @@
-// FIX46 do the Behavior Tree with Groot in the train scenario
+<?xml version="1.0"?>
+<root main_tree_to_execute="BehaviorTree">
+    <!-- FIX46 do the Behavior Tree with Groot in the train scenario-->
+    <BehaviorTree ID="BehaviorTree">
+        <KeepRunningUntilFailure>
+            <AlwaysSuccess/>
+        </KeepRunningUntilFailure>
+    </BehaviorTree>
+    <!-- ////////// -->
+    <TreeNodesModel/>
+    <!-- ////////// -->
+</root>
