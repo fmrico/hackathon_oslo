@@ -65,7 +65,7 @@ docker stop hackathon
 docker start hackathon
 ```
 
-![Captura desde 2023-06-26 09-36-17](https://github.com/fmrico/hackathon_oslo/assets/3810011/e6621a8d-7d72-401c-8708-524282d5e0f4)
+![Captura desde 2023-06-26 09-36-17](https://github.com/fmrico/hackathon_oslo/assets/3810011/7aaf0c8a-74f4-45d6-9f23-22377374cb20)
 
 ### Clone and build this repo
 
@@ -88,7 +88,7 @@ colcon build --symlink-install
 
 The bombs are of the latest generation (they use ROS 2), and can be shown in RViz2 when they are activated, exploded, and deactivated.
 
-![oslo_2 drawio](https://github.com/fmrico/hackathon_oslo/assets/3810011/5ca8a13e-2066-4532-8477-24f3e7937944)
+![oslo_2 drawio](https://github.com/fmrico/hackathon_oslo/assets/3810011/6cb81c50-7357-42a3-b65d-5faf2ef0a4d1)
 
 Bombs are ROS 2 nodes that can be accessed via several topics:
 * `/bomb_detector [bombs_msgs/msg/BombDetection]`: This topic contains the info of the sensor that the robot has to detect the distance and the countdown of each bomb
