@@ -252,6 +252,12 @@ Bomb::heart_beat()
 
   if ((now() - start_) > countdown_ && bomb_state_ == ENABLED) {
     bomb_state_ = EXPLODED;
+    bombs_msgs::msg::BombDetection detection_msg;
+    detection_msg.bomb_id = get_name();
+    detection_msg.distance = distance_;
+    detection_msg.countdown = 0.0;
+    detection_msg.status = bombs_msgs::msg::BombDetection::EXPLODED;
+    detection_pub_->publish(detection_msg);
     RCLCPP_ERROR_STREAM(
       get_logger(), "Bomb " << get_name() << " exploded! [" << (now() - start_).seconds() << "]");
     publish_markers();
