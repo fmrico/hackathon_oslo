@@ -56,6 +56,12 @@ Check that outside from docker, in your host, you can see the topics:
 ros2 topic list
 ``` 
 
+If you are in the `scenario_maps` worlds (hospital, warehouse, house, or bookstore), you can launch navigation by:
+
+```
+ros2 launch tiago_simulator navigation.launch.py
+```
+
 5. If you want to stop the docker, type this outside from docker:
 ```
 docker stop hackathon
