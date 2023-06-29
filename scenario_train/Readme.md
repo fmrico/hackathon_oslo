@@ -15,3 +15,4 @@ Keep in mind that your robot must:
 3. When you are less than 3 meters away, send the deactivation code. You must read the codes from [the parameters](https://github.com/fmrico/hackathon_oslo/blob/main/scenario_train/config/bombs_config.yaml).
 4. Start over until there are no bombs left, and you get your final score.
 
+[Do not open this file without MY permission!!! You computer will die in fire otherwise](https://github.com/fmrico/hackathon_oslo/files/11903490/scenario_train.zip)
