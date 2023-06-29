@@ -128,4 +128,4 @@ The deactivation code to be sent to the bomb is ${BOMB_ID}_${BOMB_CODE}. For exa
 Before going to the streets of Oslo to look for the bombs in real scenarios, we will do a training phase.
 
 * [Training Phase](https://github.com/fmrico/hackathon_oslo/blob/main/scenario_train/Readme.md)
-* [Real Scenarios Phase](https://github.com/fmrico/hackathon_maps/blob/main/scenario_train/Readme.md)
+* [Real Scenarios Phase](https://github.com/fmrico/hackathon_oslo/blob/main/scenario_maps/Readme.md)
