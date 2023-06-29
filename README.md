@@ -35,14 +35,14 @@ The Tiago robot has a bomb detector that indicates the distance to the bomb and 
 
 2. Check the status, when it appears as healthy, it means that the docker is running successfully
 
-![Captura desde 2023-06-26 09-32-51](https://github.com/fmrico/hackathon_oslo/assets/3810011/0452aa6b-e0f1-4f56-b08c-6c26e979f849)
+![Captura desde 2023-06-26 09-32-51](https://github.com/fmrico/hackathon_oslo/assets/3810011/af99beb3-2fe8-4d56-8991-197419e7cc28)
 
 3. Now open your browser and connect to: `localhost:6080`
     * Inside the docker, we can find a workspace: `ros2_ws`
     * It contains all packages necessary to launch the simulation of the Tiago robot and its navigation
     *  Inside this package, we can find a config file: `config/params.yaml` to change the scenario, robot position, and arm
 
-![Captura desde 2023-06-26 09-34-04](https://github.com/fmrico/hackathon_oslo/assets/3810011/135bef95-c2d7-4a6c-83cf-8aa5bc381d05)
+![Captura desde 2023-06-26 09-34-04](https://github.com/fmrico/hackathon_oslo/assets/3810011/a9cb3a62-5eac-4eb9-b1b6-3eb408e8c3c6)
 
 4. To start the robot simulation:
 
