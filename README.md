@@ -135,3 +135,7 @@ Before going to the streets of Oslo to look for the bombs in real scenarios, we 
 
 * [Training Phase](https://github.com/fmrico/hackathon_oslo/blob/main/scenario_train/Readme.md)
 * [Real Scenarios Phase](https://github.com/fmrico/hackathon_oslo/blob/main/scenario_maps/Readme.md)
+
+# Acknownledges
+
+This project has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie grant agreement No 956200
